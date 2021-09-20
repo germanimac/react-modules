@@ -12,8 +12,8 @@ import com.facebook.react.module.annotations.ReactModule;
 public class ProjetointegradoModule extends ReactContextBaseJavaModule {
     public static final String NAME = "Projetointegrado";
 
-    public ProjetointegradoModule(ReactApplicationContext reactContext) {
-        super(reactContext);
+    public ProjetointegradoModule(ReactApplicationContext Context) {
+        super(Context);
     }
 
     @Override
