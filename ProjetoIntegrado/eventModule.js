@@ -17,4 +17,3 @@ const onPress = () => {
     CalendarModule.createCalendarEvent('teste nome o porra', 'teste local o porra');
 };
 
-import {NativeModules} from 'react-native';

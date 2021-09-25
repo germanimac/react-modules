@@ -8,7 +8,7 @@
 
 import React from 'react';
 import type {Node} from 'react';
-import NewModuleButton from './eventModule'
+import NewModuleButton from './eventModule';
 import {
   SafeAreaView,
   ScrollView,
