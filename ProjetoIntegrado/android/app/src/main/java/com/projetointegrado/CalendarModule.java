@@ -5,9 +5,7 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import java.util.Map;
-
 import javax.security.auth.callback.Callback;
-
 import java.util.HashMap;
 import android.util.Log;
 
