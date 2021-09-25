@@ -1,13 +1,9 @@
 //Para acessar esse arquivo, importar nos outros arquivos JS, o seguinte modulo:
 //Import calendarModule from './CalendarModule';
 //CalendarModule.createCalendarEvent('foo', 'bar');
-
-const { CalendarModule } = ReactNative.NativeModules;
-const { CalendarModule } = NativeModules;
-import { NativeModules } from 'react-native';
 import React from 'react';
 import { NativeModules, Button } from 'react-native';
-
+const { CalendarModule } = NativeModules;
 const NewModuleButton = () => {
   const onPress = () => {console.log('We will invoke the native module here!');};
   return (

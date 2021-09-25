@@ -1,4 +1,4 @@
-package com.yourprojetointegrado;   //substituir projeto integrado pelo nome do APP
+package com.projetointegrado;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
@@ -19,12 +19,4 @@ public class MyAppPackage implements ReactPackage {
        modules.add(new CalendarModule(reactContext));
        return modules;
    }
-
-   @Override
-    protected List<ReactPackage> getPackages() {
-        @SuppressWarnings("UnnecessaryLocalVariable")
-        List<ReactPackage> packages = new PackageList(this).getPackages();
-        packages.add(new MyAppPackage());
-        return packages;
-  }
 }

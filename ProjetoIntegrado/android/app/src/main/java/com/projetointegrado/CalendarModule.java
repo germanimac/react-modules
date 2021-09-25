@@ -1,4 +1,4 @@
-package com.yourprojetointegrado;   //substituir projeto integrado pelo nome do APP
+package com.projetointegrado;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContext;

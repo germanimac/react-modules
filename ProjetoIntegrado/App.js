@@ -8,6 +8,7 @@
 
 import React from 'react';
 import type {Node} from 'react';
+import NewModuleButton from './eventModule'
 import {
   SafeAreaView,
   ScrollView,
@@ -66,6 +67,7 @@ const App: () => Node = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <NewModuleButton />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
