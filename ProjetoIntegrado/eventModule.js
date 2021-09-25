@@ -3,10 +3,15 @@
 //CalendarModule.createCalendarEvent('foo', 'bar');
 import React from 'react';
 import { NativeModules, Button } from 'react-native';
-//const { CalendarModule } = NativeModules;
+const { CalendarModule } = NativeModules;
 const NewModuleButton = () => {
   
-  const onPress = () => {CalendarModule.createCalendarEvent('Dinner Party', 'My House');};
+  const onPress = () => {
+    console.log('teste1');
+    CalendarModule.createCalendarEvent('Dinner Party', 'My House');
+    CalendarModule.createCalendarEvent('Dinner Party', 'My House');
+    console.log('teste2');
+  };
   return (
     <Button title="Click to invoke your native module!" color="#841584" onPress={onPress}/>
   );
