@@ -5,11 +5,9 @@
  * @format
  * @flow strict-local
  */
-
 import React from 'react';
 import type {Node} from 'react';
 import NewModuleButton from './eventModule';
-
 import {
   SafeAreaView,
   ScrollView,
@@ -19,7 +17,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
 import {
   Colors,
   DebugInstructions,
@@ -27,7 +24,6 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -53,14 +49,11 @@ const Section = ({children, title}): Node => {
     </View>
   );
 };
-
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
-
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
@@ -69,12 +62,10 @@ const App: () => Node = () => {
         style={backgroundStyle}>
         <Header />
         <NewModuleButton />
-
       </ScrollView>
     </SafeAreaView>
   );
 };
-
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
@@ -93,5 +84,4 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
-
 export default App;
